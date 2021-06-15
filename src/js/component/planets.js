@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 
-const Planet = props => {
+const Planets = props => {
 	const { store, actions } = useContext(Context);
 	const planetStore = store.planet.filter(plt => plt.name == props.planet.name);
 	useEffect(() => actions.planetDescription(props.planet.url), []);
@@ -47,4 +47,4 @@ PlanetCard.propTypes = {
 	id: PropTypes.number
 };
 
-export default Planet;
+export default Planets;
