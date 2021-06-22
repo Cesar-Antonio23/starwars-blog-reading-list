@@ -14,7 +14,7 @@ const Characters = props => {
 			<Card>
 				<Card.Img
 					variant="top"
-					src="https://static.wikia.nocookie.net/esstarwars/images/3/30/SWEnciclopediaPersonajesNuevaEdici%C3%B3n.jpg/revision/latest?cb=20190614013218"
+					src="https://media.timeout.com/images/103670273/320/210/image.jpg"
 					width="200"
 				/>
 				<Card.Body>
@@ -28,7 +28,7 @@ const Characters = props => {
 					) : (
 						""
 					)}
-					<Link to={"/single/" + props.character.uid} data={charStore}>
+					<Link to={"/character/" + props.character.uid} data={charStore}>
 						<Button variant="outline-primary">Learn More</Button>
 					</Link>
 					<Button

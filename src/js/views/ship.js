@@ -14,24 +14,23 @@ export const Ship = () => {
 
 	return (
 		<Container>
-			<Jumbotron className="jumbo">
+			<Jumbotron className="aux1">
 				<div className="d-flex justify-content-between">
-					<img
-						src="https://raw.githubusercontent.com/NicolasArayaB/starwars-blog-reading-list/master/dist/img/deathstar.jpg"
-						width="400"
-					/>
-					<div className="text">
+					<img src="https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024" width="400" />
+					<div className="desciption">
 						{shipStore[0] ? <h1 className="display-4">{shipStore[0].name}</h1> : ""}
 						<p>
-							Here we should have a description of each StarWars element, but this api doesn&apos;t
-							provide one, at least not personalized.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit mauris eget nulla
+							ultrices aliquam. Nunc ut ullamcorper massa. Curabitur vitae massa in risus congue dapibus a
+							eu orci. Quisque mollis sit amet nisl ac euismod. Ut vulputate leo enim, vitae accumsan
+							augue sagittis sed. Nullam non erat tellus. Mauris congue a nulla quis rutrum.
 						</p>
 					</div>
 				</div>
-				<hr className="my-4 hr" />
+				<hr className="my-4 aux2" />
 				{shipStore[0] ? (
 					<Container>
-						<Row className="info">
+						<Row className="information">
 							<Col sm={2}>Model: {shipStore[0].model}</Col>
 							<Col sm={2}>Class: {shipStore[0].starship_class}</Col>
 							<Col sm={2}>Passengers: {shipStore[0].passengers}</Col>

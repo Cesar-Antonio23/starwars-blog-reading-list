@@ -13,7 +13,7 @@ export const Home = () => {
 		<Container>
 			<Row>
 				<Col>
-					<h2 className="heading">Characters</h2>
+					<h2 className="title">Characters</h2>
 				</Col>
 			</Row>
 			<Row>
@@ -25,7 +25,7 @@ export const Home = () => {
 			</Row>
 			<Row>
 				<Col>
-					<h2 className="heading">Planets</h2>
+					<h2 className="title">Planets</h2>
 				</Col>
 			</Row>
 			<Row>
@@ -37,7 +37,7 @@ export const Home = () => {
 			</Row>
 			<Row>
 				<Col>
-					<h2 className="heading">Start Ships</h2>
+					<h2 className="title">Vehicles</h2>
 				</Col>
 			</Row>
 			<Row>
