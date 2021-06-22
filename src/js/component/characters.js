@@ -6,7 +6,9 @@ import { Context } from "../store/appContext";
 
 const Characters = props => {
 	const { store, actions } = useContext(Context);
+
 	const charStore = store.character.filter(char => char.name == props.character.name);
+
 	useEffect(() => actions.charDescription(props.character.url), []);
 
 	return (

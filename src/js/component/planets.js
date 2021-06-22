@@ -6,7 +6,9 @@ import { Context } from "../store/appContext";
 
 const Planets = props => {
 	const { store, actions } = useContext(Context);
+
 	const planetStore = store.planet.filter(plt => plt.name == props.planet.name);
+
 	useEffect(() => actions.planetDescription(props.planet.url), []);
 
 	return (

@@ -27,9 +27,9 @@ export const Navbar = () => {
 										store.favorites.map((elem, i) => (
 											<Dropdown.Item key={i} id={++i} title={elem.item}>
 												{elem.item}
-												<div id={i} onClick={() => actions.removeItem(i)}>
+												<span id={i} onClick={() => actions.removeItem(i)}>
 													&#128465;
-												</div>
+												</span>
 											</Dropdown.Item>
 										))
 									) : (
