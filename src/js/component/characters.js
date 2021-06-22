@@ -29,7 +29,7 @@ const Characters = props => {
 						""
 					)}
 					<Link to={"/character/" + props.character.uid} data={charStore}>
-						<Button variant="outline-primary">Learn More</Button>
+						<Button variant="outline-primary">Learn More!</Button>
 					</Link>
 					<Button
 						variant="outline-warning"

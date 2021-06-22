@@ -27,7 +27,7 @@ const Ships = props => {
 						""
 					)}
 					<Link to={"/ship/" + props.ship.uid} data={shipStore}>
-						<Button variant="outline-primary">Learn More</Button>
+						<Button variant="outline-primary">Learn More!</Button>
 					</Link>
 					<Button
 						variant="outline-warning"

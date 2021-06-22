@@ -18,7 +18,7 @@ export const Character = () => {
 		<Container>
 			<Jumbotron className="aux1">
 				<div className="d-flex justify-content-between">
-					<img src="" width="400" />
+					<img src="https://media.timeout.com/images/103670273/320/210/image.jpg" width="400" />
 					<div className="description">
 						{charStore[0] ? <h1 className="display-4">{charStore[0].name}</h1> : ""}
 						<p>

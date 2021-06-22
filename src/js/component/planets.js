@@ -27,7 +27,7 @@ const Planets = props => {
 						""
 					)}
 					<Link to={"/planet/" + props.planet.uid} data={planetStore}>
-						<Button variant="outline-primary">Learn More</Button>
+						<Button variant="outline-primary">Learn More!</Button>
 					</Link>
 					<Button
 						variant="outline-warning"

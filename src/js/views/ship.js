@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from "react";
 import { Container, Jumbotron, Row, Col } from "react-bootstrap";
+import "../../styles/character.scss";
 import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
-import "../../styles/character.scss";
 
 export const Ship = () => {
 	const { store, actions } = useContext(Context);
