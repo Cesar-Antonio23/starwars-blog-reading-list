@@ -41,7 +41,7 @@ const Planets = props => {
 	);
 };
 
-PlanetCard.propTypes = {
+Planets.propTypes = {
 	index: PropTypes.number,
 	planet: PropTypes.object,
 	id: PropTypes.number

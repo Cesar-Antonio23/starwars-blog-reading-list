@@ -43,7 +43,7 @@ const Characters = props => {
 	);
 };
 
-CharCard.propTypes = {
+Characters.propTypes = {
 	index: PropTypes.number,
 	character: PropTypes.object,
 	id: PropTypes.number

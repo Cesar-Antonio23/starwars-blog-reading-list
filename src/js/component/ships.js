@@ -6,17 +6,15 @@ import { Context } from "../store/appContext";
 
 const Ships = props => {
 	const { store, actions } = useContext(Context);
+
 	const shipStore = store.starShip.filter(ship => ship.name == props.ship.name);
-    
-    useEffect(() => actions.starShipDescription(props.ship.url), []);
+
+	useEffect(() => actions.starShipDescription(props.ship.url), []);
 
 	return (
 		<Col>
 			<Card>
-				<Card.Img
-					variant="top"
-					src="https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024"
-				/>
+				<Card.Img variant="top" src="https://www.denofgeek.com/wp-content/uploads/2019/12/x-wing.jpg?w=1024" />
 				<Card.Body>
 					<Card.Title>{props.ship.name}</Card.Title>
 					{shipStore[0] ? (
