@@ -43,7 +43,7 @@ const Ships = props => {
 	);
 };
 
-ShipCard.propTypes = {
+Ships.propTypes = {
 	index: PropTypes.number,
 	ship: PropTypes.object,
 	id: PropTypes.number
